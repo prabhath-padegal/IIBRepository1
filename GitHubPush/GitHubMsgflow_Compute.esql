@@ -5,7 +5,7 @@ CREATE COMPUTE MODULE GitHubMsgflow_Compute
 	BEGIN
 		-- CALL CopyMessageHeaders();
 		 CALL CopyEntireMessage();
-		 SET Environment.Variables.name = 'Pull' ;
+		 SET Environment.Variables.name = 'Pushed the code' ;
 		RETURN TRUE;
 	END;
 
